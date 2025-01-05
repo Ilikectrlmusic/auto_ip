@@ -1,0 +1,12 @@
+I'm a PHD students in California Institute of Technology,majoring in maschine learning and I'm working on my graduation thesis about the Transformer Architecture,which is the best way to train AIGC so far.I have witnessed the incredible products made by openAI and other companies which changed the world in the last 2years.Since the late 2022 when ChatGPT came out,I have been eagle for every accesses to these models,hoping to take my part in this revolution.It not only improved my working efficiency with rigorous logic but also also emerged endless creativity.From ChatGPT 2.0 to DALL.E,the AI is progressing in a speed that it will always surprise me with larger data base、new functions,so does sora,a brand new multimodal AI.As the first video generate AI model,I'm convinced that it will be the origin of the explosion of a unprecedented wide application of AI.Sora generate content could appeal in titok or youtube videos,2 of the most popular creator's platforms in the world.Being familiar with this powerful tool will deepen my understanding of the Transformer Architecture,to see its beauty as well as defects.It's my honor to be one of the pre-users of sora and it's my 4th application for the Red Team Network.Waiting for your agreement,Thanks.
+
+
+'SeewoServiceAssistant.exe','SeewoCore.exe', 'SeewoAbility.exe'
+
+server=="cloudflare" && port=="80" && header="Forbidden" && country=="IN" && asn!="13335" && asn!="209242" && is_ipv6=false
+
+pyinstaller --onefile -w --icon="C:\\Users\\Leo\\Desktop\\ico.ico" --strip --clean main.py
+
+CloudflareST.exe -cfcolo SJC,LAX,SEA,SFO,SAN,STL,LAS
+
+params = n 500-dn 200-allip #参数间用“-”相隔
