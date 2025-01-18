@@ -498,3 +498,7 @@ Error during execution: Traceback (most recent call last):
   File "main.py", line 334, in <module>
 NameError: name 'admin' is not defined
 
+Error during execution: Traceback (most recent call last):
+  File "main.py", line 334, in <module>
+NameError: name 'admin' is not defined
+
