@@ -13,7 +13,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF388256A0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCBF0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -21,7 +21,44 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388256A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCBF0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCBF0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AE3A10>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE3A10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -33,7 +70,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388256A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE3A10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -50,7 +87,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38821F40>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28720740>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -58,7 +95,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821F40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720740>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -70,7 +107,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821F40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720740>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -87,7 +124,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38823E30>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28716240>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -95,44 +132,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38823E30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38823E30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38826450>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38826450>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716240>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -144,7 +144,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38826450>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716240>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -161,7 +161,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38821D90>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AE03B0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -169,155 +169,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821D90>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821D90>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF388244D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388244D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388244D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38821280>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821280>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38821280>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38822FF0>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38822FF0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38822FF0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884A1E0>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884A1E0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE03B0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -329,7 +181,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884A1E0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE03B0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -346,7 +198,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884B110>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFC1D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -354,7 +206,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B110>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFC1D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -366,7 +218,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B110>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFC1D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -383,7 +235,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38820C80>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B287344A0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -391,118 +243,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820C80>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820C80>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38823290>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38823290>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38823290>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884AC60>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884AC60>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884AC60>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884A8A0>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884A8A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287344A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -514,7 +255,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884A8A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287344A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -531,7 +272,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884BD10>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFAD0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -539,155 +280,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884BD10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884BD10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38822330>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38822330>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38822330>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884B320>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B320>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B320>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38820140>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820140>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820140>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884B050>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFAD0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -699,7 +292,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFAD0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -716,7 +309,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF388481A0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF350>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -724,44 +317,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388481A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 288, in upload_result
-  File "requests\api.py", line 73, in get
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388481A0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF388484D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388484D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF350>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -773,7 +329,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388484D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF350>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -790,7 +346,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF388217C0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B287231D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -798,45 +354,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388217C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "main.py", line 339, in <module>
-  File "main.py", line 307, in upload_result
-  File "requests\api.py", line 130, in put
-  File "requests\api.py", line 59, in request
-  File "requests\sessions.py", line 589, in request
-  File "requests\sessions.py", line 703, in send
-  File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF388217C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-
-Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF37BC24B0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
-Error during execution: Traceback (most recent call last):
-  File "urllib3\connection.py", line 198, in _new_conn
-  File "urllib3\util\connection.py", line 85, in create_connection
-  File "urllib3\util\connection.py", line 73, in create_connection
-TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "urllib3\connectionpool.py", line 787, in urlopen
-  File "urllib3\connectionpool.py", line 488, in _make_request
-  File "urllib3\connectionpool.py", line 464, in _make_request
-  File "urllib3\connectionpool.py", line 1093, in _validate_conn
-  File "urllib3\connection.py", line 704, in connect
-  File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38824410>, 'Connection to api.github.com timed out. (connect timeout=None)')
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "requests\adapters.py", line 667, in send
-  File "urllib3\connectionpool.py", line 841, in urlopen
-  File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38824410>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287231D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -848,7 +366,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38824410>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287231D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -865,7 +383,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF3884B8C0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD040>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -873,7 +391,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B8C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD040>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -885,7 +403,7 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF3884B8C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD040>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 Error during execution: Traceback (most recent call last):
   File "urllib3\connection.py", line 198, in _new_conn
@@ -902,7 +420,7 @@ Traceback (most recent call last):
   File "urllib3\connectionpool.py", line 1093, in _validate_conn
   File "urllib3\connection.py", line 704, in connect
   File "urllib3\connection.py", line 207, in _new_conn
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000002BF38820260>, 'Connection to api.github.com timed out. (connect timeout=None)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFA40>, 'Connection to api.github.com timed out. (connect timeout=None)')
 
 The above exception was the direct cause of the following exception:
 
@@ -910,7 +428,7 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 667, in send
   File "urllib3\connectionpool.py", line 841, in urlopen
   File "urllib3\util\retry.py", line 519, in increment
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820260>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFA40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -922,5 +440,1009 @@ Traceback (most recent call last):
   File "requests\sessions.py", line 589, in request
   File "requests\sessions.py", line 703, in send
   File "requests\adapters.py", line 688, in send
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002BF38820260>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFFA40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28714E60>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28714E60>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28714E60>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28720680>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720680>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720680>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B287147D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287147D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287147D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B278B5D30>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B278B5D30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B278B5D30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28720CB0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720CB0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720CB0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF230>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF230>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF230>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCF80>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCF80>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCF80>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEDB0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEDB0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEDB0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28716750>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716750>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716750>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AE2B40>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE2B40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE2B40>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28748860>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748860>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748860>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B287160F0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287160F0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287160F0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD430>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD430>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD430>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCA10>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCA10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFCA10>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF410>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF410>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFF410>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28722BA0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28722BA0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28722BA0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720950>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28716270>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716270>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28716270>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28720290>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720290>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720290>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720500>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEFC0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEFC0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEFC0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28748890>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748890>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748890>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28720050>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28720050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFD010>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28748B30>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748B30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28748B30>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B2874A0C0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B2874A0C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B2874A0C0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B27AE37D0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE37D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AE37D0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B2874A030>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B28714440>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28714440>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 307, in upload_result
+  File "requests\api.py", line 130, in put
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B28714440>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error uploading log: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/log/2025-02-19.log (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B27AFEFC0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B2874B050>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B2874B050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B2874B050>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connection.py", line 198, in _new_conn
+  File "urllib3\util\connection.py", line 85, in create_connection
+  File "urllib3\util\connection.py", line 73, in create_connection
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 488, in _make_request
+  File "urllib3\connectionpool.py", line 464, in _make_request
+  File "urllib3\connectionpool.py", line 1093, in _validate_conn
+  File "urllib3\connection.py", line 704, in connect
+  File "urllib3\connection.py", line 207, in _new_conn
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021B287227B0>, 'Connection to api.github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 519, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287227B0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 688, in send
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-02-19.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021B287227B0>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
