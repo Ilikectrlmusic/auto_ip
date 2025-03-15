@@ -1,0 +1,14 @@
+2025-03-15T18:00:52.689452 - 已添加开机自启动项
+2025-03-15T18:00:54.621390 - config.ini 下载成功
+2025-03-15T18:00:54.624454 - 启动 CloudflareST.exe，命令：E:\program data\pythonProject\auto_ip\CloudflareST.exe -o 2025.03.15.txt -n 500 -dn 1000 -url https://speedtest.poorhub.pro/cf.7z
+2025-03-15T18:05:11.935108 - 下载 config.ini 异常：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /Ilikectrlmusic/auto_ip/main/config.ini (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5626D0A70>: Failed to resolve 'raw.githubusercontent.com' ([Errno 11004] getaddrinfo failed)"))
+2025-03-15T18:05:11.936112 - 等待10分钟后重试下载 config.ini...
+2025-03-15T19:06:30.635630 - 下载 config.ini 异常：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /Ilikectrlmusic/auto_ip/main/config.ini (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001CE0A4E0A70>: Failed to resolve 'raw.githubusercontent.com' ([Errno 11004] getaddrinfo failed)"))
+2025-03-15T19:06:30.646533 - 等待10分钟后重试下载 config.ini...
+2025-03-15T19:22:50.924153 - config.ini 下载成功
+2025-03-15T19:22:50.940134 - 启动 CloudflareST.exe，命令：E:\program data\pythonProject\auto_ip\CloudflareST.exe -o 2025.03.15.txt -n 500 -dn 1000 -url https://speedtest.poorhub.pro/cf.7z
+2025-03-15T19:28:27.547477 - config.ini 下载成功
+2025-03-15T19:28:27.567381 - 启动 CloudflareST.exe，命令：E:\program data\pythonProject\auto_ip\CloudflareST.exe -o 2025.03.15.txt -n 400
+2025-03-15T19:31:27.772242 - 2025.03.15.txt 已生成，结束 CloudflareST.exe
+2025-03-15T19:31:27.823374 - 已修改输出文件，保留前11行
+2025-03-15T19:31:29.558625 - 2025.03.15.txt 上传成功
