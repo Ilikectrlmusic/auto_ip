@@ -567,3 +567,39 @@ Traceback (most recent call last):
   File "requests\adapters.py", line 688, in send
 requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Ilikectrlmusic/auto_ip/contents/781_result/2025-03-21.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FDC9A72690>, 'Connection to api.github.com timed out. (connect timeout=None)'))
 
+Error during execution: Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 534, in _make_request
+  File "urllib3\connection.py", line 516, in getresponse
+  File "http\client.py", line 1428, in getresponse
+  File "http\client.py", line 331, in begin
+  File "http\client.py", line 300, in _read_status
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 667, in send
+  File "urllib3\connectionpool.py", line 841, in urlopen
+  File "urllib3\util\retry.py", line 474, in increment
+  File "urllib3\util\util.py", line 38, in reraise
+  File "urllib3\connectionpool.py", line 787, in urlopen
+  File "urllib3\connectionpool.py", line 534, in _make_request
+  File "urllib3\connection.py", line 516, in getresponse
+  File "http\client.py", line 1428, in getresponse
+  File "http\client.py", line 331, in begin
+  File "http\client.py", line 300, in _read_status
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 339, in <module>
+  File "main.py", line 288, in upload_result
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 589, in request
+  File "requests\sessions.py", line 703, in send
+  File "requests\adapters.py", line 682, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
